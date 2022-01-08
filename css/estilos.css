@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.grilla {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 12vw 10vw 98vw 20vw;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .nav { grid-area: nav; 
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+background-color: rgb(200, 198, 198);}
+
+.listado{
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+  
+  .main { grid-area: main;
+    display: flex;
+    justify-content: start;
+background-color: rgb(240, 229, 207); }
+
+
+.titulo{
+    padding: 10px;
+    font-size: 12px;
+    width: 160px;
+}
+  
+  .footer { grid-area: footer;
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+    padding: 2px;
+    align-items: center;
+background-color: rgb(75, 101, 135); }
+  
+.logo{
+height: 30px;
+width: 100px;
+}
+
+.listadoFooter{
+    padding: 5px;
+    text-decoration: none;
+color: blanchedalmond;
+}
+
+.fotoTitulo{
+    height: 120px;
+}
+
+.mainServicios{
+    display: flex;
+        width: 90vw;
+}
+.cuerpoServicios{
+    font-size: 12px;
+    margin: 10px;
+}
+
+@media (min-width: 768px) {
+    .grilla {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 8vw 6vw 35vw 10vw;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header header"
+          "nav nav nav"
+          "main main main"
+          "footer footer footer";}
+
+          .nav{
+              display: flex;
+              align-items: center;
+
+          }
+          .listado{
+              font-size: 15px;
+          }
+
+          .main{
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+          }
+          .mainServicios{
+              width: 90vw;
+          }
+          .cuerpoServicios{
+              font-size: 15px;
+          }
+
+          .titulo{
+              height: 250px;
+              width: 500px;
+              font-size: 30px;
+          }
+          .fotoTitulo{
+              margin: 10px;
+              padding: 2px;
+              height: 230px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+            .grilla {  display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 5vw 5vw 30vw 5vw;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                  "header header header"
+                  "nav nav nav"
+                  "main main main"
+                  "footer footer footer";}
+
+                .logo{
+                height: 50px;
+                width: 100px;
+                }
+
+                .mainServicios{
+                    width: 90vw;
+                }
+                .cuerpoServicios{
+                    font-size: 20px;
+                }
+            }
+            
+
+
