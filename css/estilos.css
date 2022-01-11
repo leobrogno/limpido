@@ -30,6 +30,9 @@ background-color: rgb(200, 198, 198);}
     color: black;
 
 }
+.listado:hover{
+    font-size: 20px;
+}
   
   .main { grid-area: main;
     display: flex;
