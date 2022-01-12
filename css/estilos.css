@@ -32,18 +32,22 @@ background-color: rgb(200, 198, 198);}
 }
 .listado:hover{
     font-size: 20px;
+    transition: .5s;
 }
   
   .main { grid-area: main;
     display: flex;
     justify-content: start;
-background-color: rgb(240, 229, 207); }
+background-color: rgb(240, 229, 207);
+
+}
 
 
 .titulo{
     padding: 10px;
     font-size: 12px;
     width: 160px;
+    animation-delay: .2s;
 }
   
   .footer { grid-area: footer;
@@ -67,6 +71,7 @@ color: blanchedalmond;
 
 .fotoTitulo{
     height: 120px;
+    animation-delay: .4s;
 }
 
 
